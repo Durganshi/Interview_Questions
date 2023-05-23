@@ -1,16 +1,16 @@
 package lambdaexamples;
 
-abstract class AbstractShape {
+abstract class Shape {
     protected int sides;
 
-    public AbstractShape(int sides) {
+    public Shape(int sides) {
         this.sides = sides;
     }
 
     public abstract void draw();
 }
 
-public class Rectangle extends AbstractShape {
+public class Rectangle extends Shape {
     private int width;
     private int height;
 

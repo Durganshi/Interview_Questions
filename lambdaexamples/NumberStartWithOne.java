@@ -2,15 +2,13 @@ package lambdaexamples;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class IntegerStartsWithOne {
+public class NumberStartWithOne {
     public static void main(String[] args) {
 
-        List<Integer> numbers = Arrays.asList(5, 2, 18, 31, 12);
-        List<Integer> integerStartingWithOne = numbers.stream()
-                .filter(num -> String.valueOf(num).startsWith("1"))
+        List<Integer> num = Arrays.asList(111,345,32,0,67,165);
+        List<Integer> integerStartingWithOne = num.stream().filter(n -> String.valueOf(n).startsWith("1"))
                         .collect(Collectors.toList());
 
         System.out.println(integerStartingWithOne);

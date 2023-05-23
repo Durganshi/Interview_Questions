@@ -2,7 +2,7 @@ package lambdaexamples;
 
 import java.util.Random;
 
-public class PrintRandomNumbers
+public class RandomNumber
 {
     public static void main(String[] args) {
         Random random = new Random();

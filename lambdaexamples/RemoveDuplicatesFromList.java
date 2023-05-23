@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 
 public class RemoveDuplicatesFromList {
     public static void main(String[] args) {
-        List<Integer> numbers = Arrays.asList(4, 2, 7, 1, 5, 2, 4, 6);
-        List<Integer> distinctNumbers = numbers.stream()
+        List<Integer> num= Arrays.asList(4, 2, 7, 1, 5, 2, 4, 6);
+        List<Integer> distinctNumbers = num.stream()
                 .distinct()
                 .collect(Collectors.toList());
         System.out.println(distinctNumbers);
