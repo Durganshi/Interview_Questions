@@ -5,7 +5,6 @@ import java.time.format.DateTimeFormatter;
 
 public class ShowDateTime {
     public static void main(String[] args) {
-
         LocalDateTime dateTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy hh:mm:ss a");
         String formattedDateTime = dateTime.format(formatter);
